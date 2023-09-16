@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="adkhrulevaPW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkT-lO-HXL">
+                                <rect key="frame" x="126" y="562" width="124" height="58"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Tap me" cornerStyle="capsule" buttonSize="large">
+                                    <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xX5-4k-oms"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OFw-zi-vLV">
+                                <rect key="frame" x="12" y="60" width="351" height="480"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdK-I5-sy7">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="80"/>
+                                        <color key="backgroundColor" red="0.64313725490196072" green="0.14117647058823529" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrP-W6-woM">
+                                        <rect key="frame" x="0.0" y="80" width="351" height="80"/>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.78823529411764703" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOT-7H-duB">
+                                        <rect key="frame" x="0.0" y="160" width="351" height="80"/>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.59215686274509804" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCf-Yg-SM0">
+                                        <rect key="frame" x="0.0" y="240" width="351" height="80"/>
+                                        <color key="backgroundColor" red="0.74117647058823533" green="0.38823529411764707" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXV-sK-bLZ">
+                                        <rect key="frame" x="0.0" y="320" width="351" height="80"/>
+                                        <color key="backgroundColor" red="0.15294117647058825" green="0.24313725490196078" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYY-qk-sCD">
+                                        <rect key="frame" x="0.0" y="400" width="351" height="80"/>
+                                        <color key="backgroundColor" red="0.23137254901960785" green="0.31372549019607843" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gkT-lO-HXL" secondAttribute="bottom" constant="47" id="5PU-9l-TpH"/>
+                            <constraint firstItem="OFw-zi-vLV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="BjS-SH-oBo"/>
+                            <constraint firstItem="gkT-lO-HXL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D8z-TR-XdI"/>
+                            <constraint firstItem="gkT-lO-HXL" firstAttribute="centerX" secondItem="OFw-zi-vLV" secondAttribute="centerX" id="SAd-fS-a08"/>
+                            <constraint firstItem="OFw-zi-vLV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hb7-1V-E7P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OFw-zi-vLV" secondAttribute="bottom" constant="127" id="hhg-3t-sBd"/>
+                            <constraint firstItem="gkT-lO-HXL" firstAttribute="top" secondItem="OFw-zi-vLV" secondAttribute="bottom" constant="22" id="q24-vg-o6n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="gkT-lO-HXL" id="7aV-GU-SDm"/>
+                        <outletCollection property="views" destination="pdK-I5-sy7" collectionClass="NSMutableArray" id="b32-in-kjG"/>
+                        <outletCollection property="views" destination="NrP-W6-woM" collectionClass="NSMutableArray" id="5bP-9c-Qv5"/>
+                        <outletCollection property="views" destination="HOT-7H-duB" collectionClass="NSMutableArray" id="m5P-pM-Ji3"/>
+                        <outletCollection property="views" destination="PCf-Yg-SM0" collectionClass="NSMutableArray" id="s7h-Jo-MHu"/>
+                        <outletCollection property="views" destination="rXV-sK-bLZ" collectionClass="NSMutableArray" id="Gsg-MU-Ox5"/>
+                        <outletCollection property="views" destination="rYY-qk-sCD" collectionClass="NSMutableArray" id="NpL-VI-0Bm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.200000000000003" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
